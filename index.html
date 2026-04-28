@@ -1,139 +1,294 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./picture/theakisaaclogo white bg.png"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
     <header>
-        <div id="navigation">
-            <div class="container">
-            <nav>
-                <img src="./picture/theakisaaclogo.png" alt="Isaac's logo" class="logo">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li> <a href="#blogs">Blogs</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            </div>
+      <nav class="nav-bar">
+        <!-- ---------------Navigation Bar ----------------- -->
+
+        <div class="navigation">
+          <img
+            src="./picture/theakisaaclogo.png"
+            alt="Isaac's logo"
+            class="logo"
+          />
+          
+            <ul class="nav-links">
+              <li><a href="#home-section">Home</a></li>
+              <li><a href="#about-section">About Me</a></li>
+              <li><a href="#projects-section">Projects</a></li>
+              <li><a href="#blog-section">Blogs</a></li>
+              <li><a href="#contact-section">Contact</a></li>
+            </ul>
+          
         </div>
+      </nav>
     </header>
+
     <main>
-        <section>
-            <div class="home">
-                <p>Software Engineer</p>
-                <h1>Hi, I'm Isaac Akerele</h1>
-                <p>I'm a Self-taught Engineer with passion to solve real problems</p>
-                <div></div><img src="" alt="Isaac Akerele's picture">
+      <section id="home-section">
+        <!-- -------------------Main Heading--------------------- -->
 
+          <div class="heading wrapper">
+            <div class="left-heading">
+              <p class="title">Software Developer | UI/UX Designer | Creative Designer</p>
+              <h1 class="profile-name">Hi, I'm <span class="my-name">Isaac Akerele</span></h1>
+              <p class="profile-text">
+                I'm a Creative Designer, Software Developer (Web & Mobile Developer) who is highly
+                skilled in Frontend Development and Backend Development
+                (Node.js-Express.js). <br />
+                <br />I am passionate about bringing imaginations and ideas to
+                life by creating standard and scalable products.
+              </p>
             </div>
-        </section>
-        <section>
-            <div>
+            <div class="right-heading">
+              <!-- <img src="./picture/Isaac picture 2.png" alt="Isaac picture"> -->
+            </div>
+          </div>
+      </section>
+
+      <section id="about-section">
+          <!-- -------------About Me-------------------- -->
+          <div class="about-me wrapper">
+            <div class="left-about-me"></div>
+            <div class="right-about-me">
+              <div class="first-right-about-me-heading-text">
                 <h1>About Me</h1>
-                <h4>Isaac Akerele is a self-taught Software Engineer who specilize in UI/UX Design, Web and App
-                    Development</h4>
-                <div>
-                    <div>
-                        <h3>Skills</h3>
-                        <p>Technical Skills</p>
-                        <p>Non-Technical Skills</p>
-                    </div>
+                <p>
+                  I'm Isaac by name, a curious and passionate Software Developer who enjoys converting imaginations and ideas into real life
+                  products and building impactful solutions. <br />
+                  <br />One thing I like to do is completing projects timely. I
+                  strive hard to complete projects and even improve them over
+                  time. I believe 3 to 5 completed projects timely are better than 10
+                  incomplete projects.
+                </p>
+              </div>
 
-                    <div>
-                        <h3>Experience</h3>
-                    </div>
+     <ul class="second-right-about-me-heading">
+                <li><span class="my-skillset">My Skillset</span></li>
+                <li><a href="./ISAAC AKERELE - GRAPHICS DESIGNER.pdf" class="btn">Download CV</a></li>
+              </ul>
 
-                    <div>
-                        <h3>Education</h3>
-                        <p>Obafemi Awolowo University, Ile-Ife</p>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-
-        <section>
-            <div>
-                <h1>My Expertise</h1>
-                <div>
-                    <h4>UI/UX Design</h4>
-                    <p>Ensure responsive design and get the best interface</p>
-                    <a href="#project">Learn more</a>
-                </div>
-
-                <div>
-                    <h4>Web Development</h4>
-                    <p>Ensure responsive Website development that is scalable, efficient and highly stunning.</p>
-                    <a href="#project">Learn more</a>
-                </div>
-
-                <div>
-                    <h4>App Development</h4>
-                    <p>Currently Learning...</p>
-                    <a href="#project">Learn more</a>
-                </div>
-
+              <ul class="technologies"><li><i class="fa-brands fa-react"></i><span>ReactJS</span></li>
+                <li><i class="fa-brands fa-node-js"></i><span>Node.js</span></li>
+                <li><i class="fa-brands fa-figma"></i><span> Figma</span></li>
+                <li></i><i class="fa-brands fa-js"></i><span>JavaScript</span>
+                   </li>
+                <li><i class="fa-brands fa-github"></i><span>GitHub</span></li>
+                <li><i class="fa-brands fa-slack"></i><span>Slack</span></li>
+                <li><i class="fa-brands fa-git-alt"></i></i><span>Git</span></li>
+                <li><i class="fa-brands fa-discord"></i><span>Discord</span></li>
+                <li><i class="fa-brands fa-hubspot"></i></i><span>HubSpot</span></li>
+                <li><i class="fa-brands fa-mailchimp"></i></i><span>Mailchimp</span></li>
+                <li><i class="fa-brands fa-medium"></i></i><span>Medium</span></li>
+                <li><i class="fa-brands fa-notion"></i></i></i><span>Notion</span></li>
+                <li><i class="fa-brands fa-yoast"></i></i><span>Yoast</span></li>
+              </ul>
 
             </div>
-        </section>
+          </div>
+      </section>
 
-        <section>
-            <div>
-                <h1>My Projects</h1>
-                <div><img src="" alt="Project 1"></div>
-                <div><img src="" alt="Project 2"></div>
-                <div><img src="" alt="Project 3"></div>
-                <a href="See more"></a>
-            </div>
-        </section>
 
-        <section>
-            <div>
-                <h1>Blogs</h1>
-                <div><img src="" alt="Blog 1"></div>
-                <div><img src="" alt="Blog 2"></div>
-                <div><img src="" alt="Blog 3"></div>
-            </div>
-        </section>
 
-        <section>
-            <div>
-                <h1>Contact Me</h1>
-
-                <div><img src="" alt="email icon">
-                    <p>officialakisaac2018@gmail.com</p>
-                </div>
-
-                <div><img src="" alt="phone no icon">
-                    <p>+2349064525786</p>
-                </div>
-
+      <section>
+      
+          <!-- --------------My Expertise-------------------- -->
+          <div class="my-expertise wrapper">
+            <h1 class="top-heading">My Expertise</h1>
+            <div class="my-expertise-list">
+              <div class="the-text-of-my-expertise">
+              
+                <div class="updated-expertise-list"><i class="fa-brands fa-sketch"></i> <a href="#">UI/UX</a></div>
                 <div>
-                    <img src="" alt="facebook icon">
-                    <img src="" alt="X icon">
-                    <img src="" alt="Instagram icon">
-                    <img src="" alt="LinkedIn icon">
+                  <p class="expertise-text">
+                    I design intuitive, user-centered experiences that balance
+                    aesthetics with functionality, helping products feel easy to
+                    use and enjoyable so users stay longer and convert better.
+                  </p>
+                  <a href="#" class="btn">Learn more</a>
                 </div>
+              </div>
 
+              <div class="the-text-of-my-expertise">
+               
+                <div class="updated-expertise-list"> <i class="fa fa-code" aria-hidden="true"></i> <a href="#">Web Development</a></div>
+                <div>
+                  <p class="expertise-text">
+                    I build fast, responsive, and scalable websites with clean
+                    code, ensuring strong performance, accessibility and
+                    seamless user experiences across all devices.
+                  </p>
+                  <a href="#" class="btn">Learn more</a>
+                </div>
+              </div>
 
+              <div class="the-text-of-my-expertise">
+                
+                <div class="updated-expertise-list"><i class="fa-brands fa-app-store"></i> <a href="#">Mobile App Development</a></div>
+                <div>
+                  <p class="expertise-text">
+                    I develop reliable, high-performance mobile apps focused on
+                    usability and real-world needs, helping teams turn ideas
+                    into products users actually love and trust.
+                  </p>
+                 <a href="#" class="btn">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+      </section>
+
+      <section id="projects-section">
+      
+          <!-- -------------My Portfolio-------------------- -->
+          <div class="portfolio wrapper">
+            <h1 class="top-heading">Portfolio</h1>
+<div class="top-heading">
+            <div class="portfolio-list">
+              <ul class="portfolio-links">
+                <li><a href="#">All</a></li>
+                <li><a href="#">UI/UX</a></li>
+                <li><a href="#">Website Development</a></li>
+                <li><a href="#">Mobile App Development</a></li>
+              </ul>
+          </div>
             </div>
 
-        </section>
-    </main>
+            <div class="portfolio-box">
 
-    <footer>
-        <p>2025. All Rights Reserved.</p>
+             <a href="#" class="app"> 
+              <div> 
+                <div class="brand-image"></div>
+                <div class="brand-details"><h4>PartyReady NG</h4>
+                <p class="app-details">Event Booking Website</p></div>
+                
+              </div></a>
+
+              <a href="https://www.abiolainspires.com/excel-community" target="_blank" rel="noopener" class="app">
+              <div>
+                <div class="second-brand-image"></div>
+                <div class="brand-details"><h4>Abiola Inspires</h4>
+                <p class="app-details">NGO Website</p></div></div></a>
+
+            <a href="#" class="app">  
+              <div>
+                <div class="third-brand-image"></div>
+                <div class="brand-details"><h4>TalentX Africa</h4>
+                <p class="app-details">A Digital Led Company Website</p></div></div></a>
+            </div>
+          </div>
+  
+      </section>
+
+      <section id="blog-section">
+        <!-- -------------------Blogs and Articles-------------- -->
+        <div class="blog-section wrapper">
+          <h1>Blogs & Articles</h1>
+          <p>I write about things I'm learning and building.</p>
+          <div class="blog-post">
+
+            <div class="blog">
+              <img src="./picture/ba27f3d6c76ccb038aa0fb7b4867af9c.jpg" alt="Isaac picture" class="blog-image">
+              <div class="blog-text">
+              <h2 class="blog-heading">The Internal Battles No One Talks About in Software Development</h2>
+              <p class="blog-subtext">In software development, nothing stays permanently difficult. Concepts that once felt impossible eventually become normal.
+</p>
+             <a href="#" class="btn">Read more</a>
+              <p class="blog-date">Feb 13, 2026</p>
+            </div>
+            </div>
+
+            <div class="blog"><img src="./picture/528a75a8024483960594bdbc43778192.jpg" alt="Isaac picture" class="blog-image">
+              <div class="blog-text">
+              <h2 class="blog-heading">How Coding Forced Me to Become More Focused</h2>
+              <p class="blog-subtext">Coding does not reward half attention.It requires presence. You can't think about yesterday's challenges or tomorrow's plans.
+</p>
+              <a href="#" class="btn">Read more</a>
+              <p class="blog-date">Jan 8, 2026</p>
+            </div></div>
+
+            <div class="blog"><img src="./picture/4946e32a1c8287db74e1102515eb793a.jpg" alt="Isaac picture" class="blog-image">
+              <div class="blog-text">
+              <h2 class="blog-heading">The Moment It Finally Clicked</h2>
+              <p class="blog-subtext">That feeling when after hours of frustration, a line of code finally runs.
+When the console returns the expected output.
+When the logic finally makes sense.
+</p>
+              <a href="#" class="btn">Read more</a>
+              <p class="blog-date">Dec 20, 2025</p>
+            </div></div>
+          </div>
+        </div>
+      </section>
+ </main>
+      <footer>
+      <section id="contact-section">
+<!-- ----------------Contact------------------ -->
+<div class="contact"><h1>Contact Me</h1>
+  <div class="left-right-contact">
+<div class="left-contact">
+  
+  <div class="email-address">
+  <p><i class="fa-regular fa-envelope"></i><a href="https://mail.google.com/mail/?view=cm&to=officialakisaac2018@gmail.com" target="_blank"></a></p><p class="my-email">officialakisaac2018@gmail.com</p></div>
+
+  <div class="phone-no"><i class="fa-brands fa-whatsapp"></i><a href="#" class="contact-me">+234 906 452 5786</a></div>
+
+  <div>
+    <ul class="social-media-icon">
+      <li><a href="https:www.linkedin.com/in/theakisaac" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in fa-contact"></i></li></a>
+    <li><a href="https://www.instagram.com/theakisaac" target="_blank" rel="noopener"><i class="fa-brands fa-instagram fa-contact"></i></a></li>
+    <li><a href="https://www.facebook.com/theakisaac" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f fa-contact"></i></a></li>
+    <li><a href="https://www.x.com/theakisaac" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter fa-contact"></i></a></li>
+    <li><a href="https://www.github.com/theakisaac" target="_blank" rel="noopener"><i class="fa-brands fa-github fa-contact" fa-contact></i></a></li>
+    <li><a href="https://www.behance.net/theakisaac" target="_blank" rel="noopener"><i class="fa-brands fa-behance fa-contact"></i></i></a></li>
+  </ul>
+</div>
+<a href="./ISAAC AKERELE - GRAPHICS DESIGNER.pdf" class="btn">Download CV</a>
+</div>
+
+<div class="right-contact">
+  <form>
+    <div class="form-details">
+    
+<label for="name"><input type="text" name="name" id="" placeholder="Your Name" required></label>
+
+<label for="name"><input type="email" name="" id="" placeholder="Your Email Address" required></label>
+
+<label for=""><textarea name="" id="" placeholder="Your Message....." required></textarea></label>
+
+<div><button type="submit" class="btn" required>Send Message</button></div>
+</div>
+  </form>
+
+</div>
+
+</div>
+</div>
+
+      </section>
+   
+      <p class="copyright">&copy; 2026 | Made for you <span class="love">&#10084;</span>. All Rights Reserved.
     </footer>
-
-</body>
-
+  </body>
 </html>

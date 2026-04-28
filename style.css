@@ -1,67 +1,725 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
-    color: white;
-    background-color: rgb(5, 0, 34);
+  color: white;
+  background-color: rgb(3, 0, 22);
+  scroll-behavior: smooth;
+  margin: auto;
+  font-family: "poppins", sans-serif;
+  font-weight: 200;
+  font-size: 1rem;
+  line-height: 1.5em;
+  width: 100%;
 }
 
-/* #navigation {
-    width: 350px;
-    height: 450px;
-    background-image: url(./picture/Isaac\ picture\ 1.png);
-    background-size: cover;
-    background-position: center;
-} */
-
-.container {
-    padding: 5px 5px;
+h1 {
+  font-weight: 900;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
-.logo {
-    height: 200px;
-    width: 250px;
-    margin: -50px;
+section {
+  scroll-margin-top: 7rem;
+}
+
+.wrapper {
+  max-width: 70%;
+  margin: auto;
+}
+
+.btn {
+  background: rgb(2, 206, 206);
+  font-weight: 400;
+  border: none;
+  text-decoration: none;
+  color: black;
+  padding: 7px 6px;
+  border-radius: 5px;
+  font-size: 12px;
+  transition: 0.4s;
+  cursor: pointer;
+   font-family: "poppins", sans-serif;
+}
+
+.btn:hover {
+  background-color: white;
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    transition: 300ms;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+background-color: rgb(0, 36, 53);
+  padding: 0.9rem 0;
 }
 
-nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
+nav .navigation {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  align-items: center;
+  width: 70%;
+  justify-content: space-between;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    position: relative;
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
 }
 
-nav ul li a::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: rgb(247, 166, 17);
-    position: absolute;
-    left: 0;
-     bottom: -6px;
-     transition: 0.7s;
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  transition: 0.5s;
 }
 
-nav ul li a:hover::after{
-    width: 100%
+.nav-links li a:hover {
+  color: rgb(2, 206, 206);
+}
+
+.logo {
+  width: 10%;
+}
+
+.title {
+font-size: 0.9em;
+line-height: 1.4em;
+margin-bottom: 0.8rem;
+}
+
+.profile-name {
+  line-height: 1.2em;
+  margin-bottom: 0.4rem;
+}
+
+.heading {
+
+  margin: 6rem auto 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+
+}
+
+
+.left-heading {
+  flex: 1;
+
+  text-align: left;
+
+}
+
+/* .right-heading {
+  background: url(./picture/Isaac\ picture\ 2.png) no-repeat center top 15% /
+    cover;
+  background-size: 80%;
+  flex: 1;
+  height: 100%;
+  border-radius: 15px;
+} */
+
+.right-heading {
+  background: url(./picture/Isaac\ picture\ 2.png) no-repeat center top 15% /
+    cover;
+  background-size: 120%;
+  flex: 1;
+  border-radius: 12px;
+  height: 100%;
+}
+
+.my-name {
+  color: rgb(2, 207, 207);
+  font-weight: 900;
+  font-size: 2rem;
+}
+.title {
+  color: rgb(2, 206, 206);
+  font-weight: 300;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-me {
+  display: flex;
+  gap: 3.6rem;
+  justify-content: center;
+  margin: 2rem auto;
+width: 70%;
+  padding: 1rem 0;
+}
+
+.left-about-me {
+  flex: 1;
+  background: url(./picture/IMG_5184.jpg) no-repeat center center/cover;
+   object-position: center top;
+  filter: grayscale(100%);
+  background-size: 150%;
+  border-radius: 15px;
+  transition: 0.4s ease;
+  height: 25rem;
+}
+
+.left-about-me:hover {
+  filter: grayscale(0%);
+}
+
+.right-about-me {
+  flex: 2;
+}
+
+.my-skillset {
+  font-weight: 500;
+}
+
+.second-right-about-me-heading {
+  display: flex;
+  gap: 2rem;
+  margin: 1rem auto;
+  list-style: none;
+}
+
+.technologies {
+  display: flex;
+  list-style-type: none;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+
+.technologies li {
+  border-radius: 8px;
+  border: 1px solid grey;
+  padding: 3px 5px;
+  font-size: 12px;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Icons Styles */
+
+/*
+.fa-js {
+  font-size: 15px;
+  padding: 3px 3px;
+  margin-right: 5px;
+}
+
+.fa-node-js {
+  font-size: 15px;
+  padding: 3px 3px;
+  margin-right: 5px;
+}
+
+.fa-react {
+  font-size: 15px;
+  padding: 3px 3px;
+  margin-right: 5px;
+}
+
+.fa-figma {
+  font-size: 15px;
+  padding: 3px 3px;
+  margin-right: 5px;
+}
+
+.fa-github {
+  font-size: 15px;
+  padding: 3px 3px;
+  margin-right: 5px;
+}
+
+.fa-slack {
+  font-size: 15px;
+  padding: 3px 3px;
+  margin-right: 5px;
+}
+
+.fa-git-alt {
+  font-size: 15px;
+  padding: 3px 3px;
+  margin-right: 5px;
+}
+
+.fa-discord {
+  font-size: 15px;
+  padding: 3px 3px;
+  margin-right: 5px;
+}
+
+.fa-hubspot {
+  font-size: 15px;
+  padding: 3px 3px;
+  margin-right: 5px;
+}
+
+.fa-mailchimp {
+  font-size: 15px;
+  padding: 3px 3px;
+  margin-right: 5px;
+}
+
+.fa-medium {
+  font-size: 15px;
+  padding: 3px 3px;
+  margin-right: 5px;
+}
+
+.fa-notion {
+  font-size: 15px;
+  padding: 3px 3px;
+  margin-right: 5px;
+}
+
+.fa-yoast {
+  font-size: 15px;
+  padding: 3px 3px;
+  margin-right: 5px;
+}
+
+*/
+
+.my-expertise {
+
+  margin: 3rem auto;
+}
+
+.top-heading {
+  text-align: center;
+  margin: 2rem auto;
+}
+.my-expertise-list {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.9em;
+  width: 100%;
+  max-height: 100%;
+  justify-content: space-evenly;
+  margin-top: 1.2rem;
+}
+.the-text-of-my-expertise {
+  background: rgb(44, 44, 44);
+  flex: 1;
+  border-radius: 8px;
+  padding: 2rem 1rem;
+}
+
+.expertise-text {
+  margin-bottom: 0.8rem;
+  
+}
+
+.the-text-of-my-expertise a {
+  text-decoration: none;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  transition: 0.4s;
+}
+/*
+.fa-code {
+  font-size: 20px;
+  color: rgb(2, 206, 206);
+}
+
+.fa-code:hover {
+  color: white;
+}
+
+.fa-app-store {
+  font-size: 20px;
+}
+
+.fa-sketch {
+  font-size: 20px;
+}
+*/
+.updated-expertise-list i,
+.updated-expertise-list a {
+  color: rgb(2, 206, 206);
+  cursor: pointer;
+}
+
+.updated-expertise-list:hover i,
+.updated-expertise-list:hover a {
+  color: rgb(255, 255, 255);
+}
+
+.portfolio {
+  
+  margin-bottom: 3rem;
+}
+
+.portfolio-box {
+  display: flex;
+  gap: 1rem;
+  
+}
+
+.app {
+  cursor: pointer;
+  flex: 1;
+  transition: 0.4s;
+  text-decoration: none;
+}
+
+.app-details {
+  color: white;
+  margin-top: -0.3rem;
+}
+
+.app:hover {
+  opacity: 0.7;
+}
+
+.second-app {
+  flex: 1;
+}
+
+.third-app {
+  flex: 1;
+}
+
+.brand-image {
+  background: url(./picture/partyready\ Web.png) no-repeat center center/cover;
+  height: 18rem;
+  border-radius: 12px;
+  margin-bottom: 0.6rem;
+}
+.second-brand-image {
+  background: url(./picture/abiola\ inspires\ web.png) no-repeat center
+    center/cover;
+  height: 18rem;
+  border-radius: 12px;
+  margin-bottom: 0.6rem;
+}
+
+.third-brand-image {
+  background: url(/picture/talentx\ web.png) no-repeat center center/cover;
+  height: 18rem;
+  border-radius: 12px;
+  margin-bottom: 0.6rem;
+}
+
+.brand-details {
+  
+  font-size: 12px;
+}
+
+.portfolio-links {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.portfolio-links li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: ;
+  transition: 0.4s;
+}
+
+.portfolio-links li a:hover {
+  color: rgb(2, 206, 206);
+}
+
+.brand-details h4 {
+  font-weight: 500;
+  color: rgb(2, 206, 206);
+}
+
+.blog-section {
+  margin: 2rem auto;
+  text-align: center;
+
+}
+
+.blog-post {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem auto;
+
+}
+
+.blog {
+  border-radius: 12px;
+  text-align: left;
+  border: 1px solid rgb(49, 49, 49);
+  flex: 1;
+  cursor: pointer;
+  transition: 0.4s;
+
+}
+
+.blog:hover {
+  border: 1px solid rgb(102, 102, 102);
+}
+
+.blog-image {
+  height: 18rem;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  object-position: center;
+  width: 100%;
+  padding: 7px;
+  border-radius: 15px 15px 0 0;
+}
+
+.blog-heading {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.3em;
+}
+
+.blog-text {
+  padding: 7px;
+  font-size: 0.8em;
+   line-height: 1.4em;
+}
+
+.blog-subtext {
+  margin: 0.8rem 0;
+}
+
+.blog-date {
+  font-size: 10px;
+  margin: 1rem 0 0.6rem;
+}
+
+.contact {
+  text-align: center;
+  margin: 3rem auto;
+  width: 70%;
+}
+
+.left-right-contact {
+  display: flex;
+  flex-direction: row;
+  gap: 0.7rem;
+  margin: 1rem 0;
+  text-align: left;
+  border: 1px solid rgb(73, 73, 73);
+  border-radius: 12px;
+  padding: 4px;
+   font-size: 0.9em;
+   align-items: center;
+}
+
+.left-contact {
+  line-height: 3rem;
+  flex: 1;
+  margin: auto 1rem;
+  align-items: center;
+}
+
+.social-media-icon {
+  display: flex;
+  list-style-type: none;
+  gap: 0.5rem;
+     font-size: 0.5em;
+}
+
+.right-contact {
+  flex: 2;
+  border: 1px solid rgb(73, 73, 73);
+  border-radius: 12px;
+  padding: 0 1rem;
+}
+
+.fa-envelope 6{
+  margin-right: 2px;
+  cursor: pointer;
+  color: rgb(2, 206, 206);
+  font-size: 1em;
+  transition: 0.4s;
+}
+
+.fa-envelope:hover {
+  color: rgb(255, 255, 255);
+}
+
+.email-address {
+ display: flex;
+}
+
+.my-email {
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.my-email:hover {
+  color: rgb(2, 206, 206);
+}
+
+.email-address a {
+ 
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.4s;
+   font-size: 0.9em;
+  align-items: center;
+}
+
+.email-address:hover a {
+  color: rgb(2, 206, 206);
+}
+
+.contact-me {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.4s;
+     font-size: 0.9em;
+     
+}
+
+.contact-me:hover {
+  color: rgb(2, 206, 206);
+}
+
+.fa-whatsapp {
+font-size: 1em;
+}
+.fa-brands {
+  cursor: pointer;
+  font-size: 1em;
+  color: rgb(2, 206, 206);
+  transition: 0.4s;
+}
+
+.fa-brands:hover {
+  color: rgb(255, 255, 255);
+}
+
+.fa-whatsapp {
+font-size: 1.2em;
+}
+
+.fa-whatsapp:hover {
+  color: rgb(255, 255, 255);
+}
+
+.fa-contact {
+  cursor: pointer;
+  font-size: 2.5em;
+  color: rgb(2, 206, 206);
+  transition: 0.4s;
+}
+
+.fa-contact:hover {
+  color: rgb(255, 255, 255);
+}
+
+.form-details {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+form input,
+form textarea {
+  margin: 0.5rem 0;
+  border-radius: 6px;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  background: rgb(66, 66, 66);
+  outline: none;
+  border: none;
+  padding: 1rem;
+    font-family: "poppins", sans-serif;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #9b9a9a;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: 1px solid rgb(163, 163, 163);
+}
+
+form textarea {
+ 
+  resize: none;
+}
+
+.copyright {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 0.9em;
+}
+
+.love {
+  color: red;
+}
+
+
+
+ /* Mobile styles */
+
+@media (max-width: 768px) {
+ body {
+  font-size: 0.9em;
+ }
+
+ .brand-image {
+  
+  height: 14rem;
+  object-fit: cover;
+
+}
+.second-brand-image {
+  height: 14rem;
+  object-fit: cover;
+}
+
+.third-brand-image {
+  height: 14rem;
+  object-fit: cover;
+}
+
+.blog-image {
+  height: 10rem;
+  object-fit: cover;
+}
+
+.blog-heading {
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.3em;
+}
+
+.btn {
+
+  font-size: 9px;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+}
+
+
+@media (max-width: 425px) {
+ body {
+font-size: 0.7em;
+ }
+
 }
